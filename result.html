@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Salary Result</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="background"></div>
+
+
+    <div class="container">
+
+        <h1>Salary Result</h1>
+
+        <p class="subtitle">
+            Employee Salary Breakdown
+        </p>
+
+
+        <div class="card">
+
+
+            <!-- =========================
+                 CTC DETAILS
+            ========================== -->
+
+            <h3 class="section-title">
+                CTC Details
+            </h3>
+
+
+            <div class="result-row">
+
+                <span>
+                    Annual CTC
+                </span>
+
+                <strong id="annualCTC">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Monthly CTC
+                </span>
+
+                <strong id="monthlyCTC">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Salary Month
+                </span>
+
+                <strong id="salaryMonth">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Days in Month
+                </span>
+
+                <strong id="daysInMonth">
+                    0
+                </strong>
+
+            </div>
+
+
+            <hr>
+
+
+            <!-- =========================
+                 SALARY COMPONENTS
+            ========================== -->
+
+            <h3 class="section-title">
+                Salary Components
+            </h3>
+
+
+            <div class="result-row">
+
+                <span>
+                    Basic + DA
+                </span>
+
+                <strong id="basicDA">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    HRA
+                </span>
+
+                <strong id="hra">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Flexi
+                </span>
+
+                <strong id="flexi">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row gross">
+
+                <span>
+                    Gross Salary
+                </span>
+
+                <strong id="gross">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <hr>
+
+
+            <!-- =========================
+                 PF & ESI
+            ========================== -->
+
+            <h3 class="section-title">
+                PF & ESI
+            </h3>
+
+
+            <div class="result-row">
+
+                <span>
+                    PF Base
+                </span>
+
+                <strong id="pfBase">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Employee PF 12%
+                </span>
+
+                <strong id="employeePF">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Employer PF 12%
+                </span>
+
+                <strong id="employerPF">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    ESI 0.75%
+                </span>
+
+                <strong id="esi">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <hr>
+
+
+            <!-- =========================
+                 LEAVE DETAILS
+            ========================== -->
+
+            <h3 class="section-title">
+                Leave Details
+            </h3>
+
+
+            <div class="result-row">
+
+                <span>
+                    Casual Leave Taken
+                </span>
+
+                <strong id="casualLeave">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Allowed Casual Leave
+                </span>
+
+                <strong>
+                    1 Day
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Loss of Pay Days
+                </span>
+
+                <strong id="lopDays">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Per Day Salary
+                </span>
+
+                <strong id="perDaySalary">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    LOP Deduction
+                </span>
+
+                <strong id="leaveDeduction">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <hr>
+
+
+            <!-- =========================
+                 OTHER DEDUCTIONS
+            ========================== -->
+
+            <h3 class="section-title">
+                Other Deductions
+            </h3>
+
+
+            <div class="result-row">
+
+                <span>
+                    Purchase
+                </span>
+
+                <strong id="purchase">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    Penalty
+                </span>
+
+                <strong id="penalty">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div class="result-row total">
+
+                <span>
+                    Total Deduction
+                </span>
+
+                <strong id="totalDeduction">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <!-- =========================
+                 NET SALARY
+            ========================== -->
+
+            <div class="net-salary">
+
+                <span>
+                    NET SALARY
+                </span>
+
+                <strong id="netSalary">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <button onclick="goBack()">
+                Calculate Again
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

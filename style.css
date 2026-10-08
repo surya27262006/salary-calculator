@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.background {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -1;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 20%,
+            #2563eb 0%,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 80%,
+            #9333ea 0%,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a,
+            #111827
+        );
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 680px;
+
+    margin: auto;
+
+    padding: 50px 0;
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+h1 {
+
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+
+    text-align: center;
+
+    color: #cbd5e1;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.20);
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0, 0, 0, 0.40);
+
+    backdrop-filter: blur(15px);
+}
+
+
+h2 {
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+label {
+
+    display: block;
+
+    margin-top: 18px;
+
+    margin-bottom: 8px;
+
+    color: #e2e8f0;
+
+    font-size: 15px;
+}
+
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background: white;
+
+    color: #111827;
+}
+
+
+input:focus,
+select:focus {
+
+    box-shadow:
+        0 0 0 3px
+        rgba(59, 130, 246, 0.40);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FORMULA BOX
+========================================= */
+
+.formula {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+}
+
+
+.formula h3 {
+
+    margin-bottom: 15px;
+}
+
+
+.formula p {
+
+    margin: 10px 0;
+
+    color: #cbd5e1;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
+    color: #93c5fd;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   RESULT ROW
+========================================= */
+
+.result-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 13px 0;
+
+    color: #e2e8f0;
+}
+
+
+.result-row strong {
+
+    color: white;
+
+    text-align: right;
+
+    white-space: nowrap;
+}
+
+
+.gross {
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.total {
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HORIZONTAL LINE
+========================================= */
+
+hr {
+
+    border: none;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.20);
+
+    margin: 15px 0;
+}
+
+
+/* =========================================
+   NET SALARY
+========================================= */
+
+.net-salary {
+
+    margin-top: 20px;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(34, 197, 94, 0.20);
+
+    border:
+        1px solid
+        rgba(34, 197, 94, 0.30);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-weight: bold;
+}
+
+
+.net-salary strong {
+
+    font-size: 26px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        width: 94%;
+
+        padding: 30px 0;
+    }
+
+
+    h1 {
+
+        font-size: 32px;
+    }
+
+
+    .card {
+
+        padding: 20px;
+    }
+
+
+    .result-row {
+
+        font-size: 14px;
+    }
+
+
+    .net-salary {
+
+        font-size: 14px;
+    }
+
+
+    .net-salary strong {
+
+        font-size: 20px;
+    }
+
+}
